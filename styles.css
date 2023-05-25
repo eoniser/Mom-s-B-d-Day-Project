@@ -1,28 +1,58 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
   }
   
   .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    width: 100vw;
     height: 100vh;
-    background-color: #f5f5f5;
   }
   
-  #poem {
-    text-align: center;
+#one {
+    animation: fade-one 5s forwards;
+    animation-delay: 0;
+}
+
+#two {
+    animation: fade-one 5s forwards;
+    animation-delay: 5s;
+}
+
+#three {
+    animation: fade-one 5s forwards;
+    animation-delay: 10s;
+}
+
+#four {
+    animation: fade-one 5s forwards;
+    animation-delay: 15s;
+}
+
+#five {
+    animation: fade-one 5s forwards;
+    animation-delay: 20s;
+}
+  .container div {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 24px;
-    animation: fade 3s infinite;
+    opacity: 0;
+  }
+ 
+
+  @keyframes fade-one {
+    0% {opacity: 0;}
+    30% {opacity: 1;}
+    80% {opacity: 1;}
+    100% {opacity: 0;}
   }
   
-  @keyframes fade {
-    0%, 100% {
-      opacity: 0;
-    }
-    10%, 90% {
-      opacity: 1;
-    }
+  @keyframes fade-two {
+    0% {opacity: 0;}
+    30% {opacity: 1;}
+    80% {opacity: 1;}
+    100% {opacity: 0;}
   }
