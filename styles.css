@@ -6,10 +6,6 @@ body {
     background-size: cover;
 }
 
-img.bg {
-    min-height: 100%;
-}
-
 .container {
     position: relative;
     width: 100vw;
