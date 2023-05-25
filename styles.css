@@ -1,24 +1,20 @@
-
-
-
 body {
     margin: 0;
     padding: 0;
     display: block;
-    background-image: url("B\ GE\ GE.jpg") ;
+    background-image: url('B\ GE\ GE.jpg');
     background-size: cover;
-  }
+}
 
-  img.bg {
-    min-height: 100% ;
-  }
-  
-  .container {
+img.bg {
+    min-height: 100%;
+}
+
+.container {
     position: relative;
     width: 100vw;
     height: 100vh;
-  }
-  
+}
 
 #one {
     animation: fade-one 10s forwards;
@@ -58,17 +54,16 @@ body {
 }
 
 img {
-width: 15em;
+    width: 15em;
 }
+
 @media (orientation: landscape) {
     img {
         width: 10em;
-        }
-  }
-  
+    }
+}
 
-
-  .container div {
+.container div {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -77,32 +72,39 @@ width: 15em;
     font-family: 'Caveat', cursive;
     opacity: 0;
     color: rgb(46, 46, 46);
-   /* From https://css.glass */
-background: rgba(255, 255, 255, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-/* backdrop-filter: blur(20px); */
-/* -webkit-backdrop-filter: blur(20px); */
-border: 1px solid rgba(255, 255, 255, 0.3);
-padding: 10px;
-  }
- 
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px;
+}
 
-  @keyframes fade-one {
-    0% {opacity: 0;}
-    30% {opacity: 1;}
-    80% {opacity: 1;}
-    100% {opacity: 0;}
-  }
-  
-  @keyframes fade-two {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-  }
+@keyframes fade-one {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 
-  @media only screen and (min-width: 768px) {
+@keyframes fade-two {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 768px) {
     main {
         display: flex;
     }
-
-    }
+}
