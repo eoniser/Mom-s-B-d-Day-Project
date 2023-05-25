@@ -1,6 +1,16 @@
+
+
+
 body {
     margin: 0;
     padding: 0;
+    display: block;
+    background-image: url("B\ GE\ GE.jpg") ;
+    background-size: cover;
+  }
+
+  img.bg {
+    min-height: 100% ;
   }
   
   .container {
@@ -9,37 +19,72 @@ body {
     height: 100vh;
   }
   
+
 #one {
-    animation: fade-one 5s forwards;
+    animation: fade-one 10s forwards;
     animation-delay: 0;
 }
 
 #two {
-    animation: fade-one 5s forwards;
-    animation-delay: 5s;
-}
-
-#three {
-    animation: fade-one 5s forwards;
+    animation: fade-one 10s forwards;
     animation-delay: 10s;
 }
 
+#three {
+    animation: fade-one 10s forwards;
+    animation-delay: 20s;
+}
+
 #four {
-    animation: fade-one 5s forwards;
-    animation-delay: 15s;
+    animation: fade-one 10s forwards;
+    animation-delay: 30s;
 }
 
 #five {
     animation: fade-one 5s forwards;
-    animation-delay: 20s;
+    animation-delay: 40s;
 }
+
+#six {
+    animation: fade-two 3s forwards;
+    animation-delay: 50s;
+    opacity: 1;
+}
+
+#seven {
+    animation: fade-two 4s forwards;
+    animation-delay: 65s;
+    opacity: 1;
+}
+
+img {
+width: 15em;
+}
+@media (orientation: landscape) {
+    img {
+        width: 10em;
+        }
+  }
+  
+
+
   .container div {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 24px;
+    font-family: 'Caveat', cursive;
     opacity: 0;
+    color: rgb(46, 46, 46);
+   /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+/* backdrop-filter: blur(20px); */
+/* -webkit-backdrop-filter: blur(20px); */
+border: 1px solid rgba(255, 255, 255, 0.3);
+padding: 10px;
   }
  
 
@@ -52,7 +97,12 @@ body {
   
   @keyframes fade-two {
     0% {opacity: 0;}
-    30% {opacity: 1;}
-    80% {opacity: 1;}
-    100% {opacity: 0;}
+    100% {opacity: 1;}
   }
+
+  @media only screen and (min-width: 768px) {
+    main {
+        display: flex;
+    }
+
+    }
