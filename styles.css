@@ -44,13 +44,13 @@ img.bg {
 #six {
     animation: fade-two 3s forwards;
     animation-delay: 50s;
-    opacity: 1;
+    
 }
 
 #seven {
     animation: fade-two 4s forwards;
     animation-delay: 65s;
-    opacity: 1;
+    
 }
 
 img {
