@@ -39,13 +39,13 @@ body {
 
 #six {
     animation: fade-two 3s forwards;
-    animation-delay: 50s;
+    animation-delay: 45s;
     
 }
 
 #seven {
     animation: fade-two 4s forwards;
-    animation-delay: 65s;
+    animation-delay: 55s;
     
 }
 
